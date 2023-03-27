@@ -1,14 +1,5 @@
 .introAnimation {
   font-size: 72px;
-  font-family: Modeseven;
-  text-transform: uppercase;
-  color: #03DA6F;
-  text-shadow:
-    -2px -2px 0 #000,  
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000;
-  text-align: center;
 }
 
 @media(max-width: 1024px) {

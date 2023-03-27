@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import Background from './Background';
 import classNames from './WelcomeAnimation.module.css';
 
 const text = "Entering the Mattaverse";
@@ -22,19 +21,18 @@ const WelcomeAnimation = (props) => {
 
   return (
     <>
-      <Background />
       <div className={classNames.welcomeAnimationWrapper}>
         <TypeAnimation
           sequence={
             [
               "",
               3000,
-              "Entering the Mattaverse",
+              text,
               onFinished,
             ]
           }
           speed={5}
-          className={classNames.introAnimation}
+          className={[classNames.introAnimation, 'codeTyping', 'underscore'].join(' ')}
         />
       </div>
     </>

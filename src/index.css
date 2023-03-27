@@ -13,3 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.codeTyping {
+  font-family: Modeseven;
+  text-transform: uppercase;
+  color: #03DA6F;
+  text-shadow:
+    -2px -2px 0 #000,  
+      2px -2px 0 #000,
+    -2px  2px 0 #000,
+      2px  2px 0 #000;
+  text-align: center;
+}
+
+.underscore::after {
+  content: '_'!important;
+}
