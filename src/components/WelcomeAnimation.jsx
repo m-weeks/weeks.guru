@@ -34,6 +34,10 @@ const WelcomeAnimation = (props) => {
           speed={5}
           className={[classNames.introAnimation, 'codeTyping', 'underscore'].join(' ')}
         />
+        {/* Allows the children to mount before being rendered to help prevent the page jumping */}
+        <div style={{ display: 'none' }}>
+          {children}
+        </div>
       </div>
     </>
   )
